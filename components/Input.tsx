@@ -27,7 +27,7 @@ const Input = ({ guesses, setGuesses }: InputProps) => {
          onChange={(e) => setCurrentGuess(e.target.value)}
          onKeyDown={handleKeyDown}
          className="border px-3 py-2 rounded text-center uppercase tracking-widest"
-         placeholder="Type guess & press Enter"
+         placeholder="Guess The Word"
       />
    );
 };
