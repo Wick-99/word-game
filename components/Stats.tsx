@@ -11,16 +11,20 @@ const Stats = ({ guesses, targetWord }: StatsProps) => {
       (g) => g.toLowerCase() === normalizedTarget
    );
 
+   console.log(guessedCorrectly);
+
    return (
       <>
          {guessedCorrectly && (
-            <p className="text-green-600 font-semibold text-xl mt-10">
-               You guessed it! The word was {targetWord} 🎉
+            <p className="text-green-600 font-semibold">
+               You guessed it! The word was{" "}
+               <span className="text-2xl">{targetWord}</span> 🎉
             </p>
          )}
          {guesses.length === 5 && !guessedCorrectly && (
             <p className="text-red-600 font-semibold">
-               Game Over! The word was <span className="text-2xl">{targetWord}</span> ❌
+               Game Over! The word was{" "}
+               <span className="text-2xl">{targetWord}</span> ❌
             </p>
          )}
       </>

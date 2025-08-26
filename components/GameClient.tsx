@@ -11,6 +11,7 @@ const GameClient = () => {
 
    useEffect(() => {
       const randomWord = WORDS[Math.floor(Math.random() * WORDS.length)];
+      console.log(randomWord)
       setTargetWord(randomWord);
    }, []);
 
