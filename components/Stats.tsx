@@ -18,13 +18,13 @@ const Stats = ({ guesses, targetWord }: StatsProps) => {
          {guessedCorrectly && (
             <p className="text-green-600 font-semibold">
                You guessed it! The word was{" "}
-               <span className="text-2xl">{targetWord}</span> 🎉
+               <span className="text-2xl">{targetWord.toUpperCase()}</span> 🎉
             </p>
          )}
          {guesses.length === 5 && !guessedCorrectly && (
             <p className="text-red-600 font-semibold">
                Game Over! The word was{" "}
-               <span className="text-2xl">{targetWord}</span> ❌
+               <span className="text-2xl">{targetWord.toUpperCase()}</span> ❌
             </p>
          )}
       </>
