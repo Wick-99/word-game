@@ -6,7 +6,7 @@ const GameRules = () => {
          <h2 className="text-lg font-semibold text-white mb-4">Game Rules</h2>
          <ul className="space-y-3 text-sm sm:text-base">
             <li className="flex items-center gap-3">
-               <span className="w-6 h-6 rounded bg-orange-500 inline-block"></span>
+               <span className="w-6 h-6 rounded bg-yellow-500 inline-block"></span>
                <span className="text-gray-300">
                   The letter is in the word, but in the <b>wrong position</b>.
                </span>
