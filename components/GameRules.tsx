@@ -2,7 +2,7 @@ import React from "react";
 
 const GameRules = () => {
    return (
-      <div className="mt-8 w-full max-w-xl bg-gray-800 rounded-xl p-6 shadow-lg">
+      <div className="mt-8 w-full max-w-xl bg-gray-800 rounded-xl p-6 shadow-lg ">
          <h2 className="text-lg font-semibold text-white mb-4">Game Rules</h2>
          <ul className="space-y-3 text-sm sm:text-base">
             <li className="flex items-center gap-3">
