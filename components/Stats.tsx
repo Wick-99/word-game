@@ -11,8 +11,6 @@ const Stats = ({ guesses, targetWord }: StatsProps) => {
       (g) => g.toLowerCase() === normalizedTarget
    );
 
-   console.log(guessedCorrectly);
-
    return (
       <>
          {guessedCorrectly && (
